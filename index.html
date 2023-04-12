@@ -21,7 +21,7 @@
         <div class="logo">
           <img src="./images/logo.svg" alt="">
         </div>
-        
+
     <div class="container">
 
       <!-- -----------------------left div ----------------------------- -->
@@ -30,21 +30,21 @@
         <div class="left-div-one">
           <label for="bill">Bill</label> <br />
           <img class="dol" src="./images/icon-dollar.svg" alt="">
-          <input type="number" placeholder="0" id="bill" />
+          <input type="number" placeholder="0" id="bill"/>
         </div>
         <div class="left-div-two">
           <label for="tip">Select Tip %</label>
           <div class="tips">
-            <button>5%</button>
-            <button>10%</button>
-            <button>15%</button>
-            <button>25%</button>
-            <button>50%</button>
-            <input class="custom" type="number" placeholder="Custom">
+            <div class="tip" >5%</div>
+            <div class="tip" >10%</div>
+            <div class="tip" >15%</div>
+            <div class="tip" >25%</div>
+            <div class="tip" >50%</div>
+            <input id="custom" type="number" placeholder="Custom">
           </div>
         </div>
         <div class="left-div-three">
-          <label for="people">Number Of People</label> <br />
+          <label for="people">Number Of People <span class="error">Can't be zero</span></label> <br />
           <img class="per" src="./images/icon-person.svg" alt="">
           <input type="number" placeholder="0" id="people"/>
         </div>
@@ -61,7 +61,7 @@
           </div>
           <div class="amt">
             <img src="./images/icon-dollar.svg" alt="">
-            <p class="right-amount">0.00</p>
+            <p class="right-amount tipPerson">4.27</p>
           </div>
         </div>
         <div class="right-div-one">
@@ -71,11 +71,11 @@
           </div>
           <div class="total-amt">
             <img src="./images/icon-dollar.svg" alt="">
-            <p class="right-amount">0.00</p>
+            <p class="right-amount amtPerson">32.79</p>
           </div>
         </div>
       </div>
-      <button>RESET</button>
+      <button class="submit">RESET</button>
       </div>
 
     </div>
