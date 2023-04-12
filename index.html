@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <!-- -----------------------left div ----------------------------- -->
+
+      <div class="left-div">
+        <div class="left-div-one">
+          <label for="bill">Bill</label> <br />
+          <input type="number" placeholder="0" id="bill" />
+        </div>
+        <div class="left-div-two">
+          <label for="tip">Select Tip %</label>
+          <div class="tips">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input type="number" placeholder="Custom">
+          </div>
+        </div>
+        <div class="left-div-three">
+          <label for="people">Number Of People</label> <br />
+          <input type="number" placeholder="0" id="people"/>
+        </div>
+      </div>
+
+      <!-- ----------------------------right div ----------------------------- -->
+
+      <div class="right-div">
+      <div class="right-amt-div">
+        <div class="right-div-one">
+          <div class="tip-amt">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <div class="amt">
+            <img src="./images/icon-dollar.svg" alt="">
+            <p class="right-amount">0.00</p>
+          </div>
+        </div>
+        <div class="right-div-one">
+          <div class="tot-amt">
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <div class="tot-amt">
+            <img src="./images/icon-dollar.svg" alt="">
+            <p class="right-amount">0.00</p>
+          </div>
+        </div>
+      </div>
+      <button>RESET</button>
+      </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
